@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    
     // Add click event handlers to the buttons
     $('.button').click(function() {
         // Remove 'active' class from all buttons
@@ -13,9 +14,25 @@ $(document).ready(function() {
         $('.content > div').removeClass('active');
         // Show the corresponding content section
         $('.content-' + (target)).addClass('active');
+        
+        // Change the text color of the target div
+        var color = getColorByTarget(target);
+        $('body').css('--color-fg', color);
     });
 });
 
-
-
-"https://preview.redd.it/y8djj6h6l8041.gif?width=660&format=mp4&v=enabled&s=4cd770433d60e3655948340045671c530b5b6102"
+// Helper function to determine the color based on the target
+function getColorByTarget(target) {
+    switch (target) {
+    case 1:
+        return '#e2c99d'; // Example color for target 1
+    case 2:
+        return '#edbaff'; // Example color for target 2
+    case 3:
+        return '#8cc87a'; // Example color for target 3
+    case 4:
+        return '#8ad1cf'; // Example color for target 4
+    default:
+        return 'white'; // Default color
+    }
+}
