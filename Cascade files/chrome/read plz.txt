@@ -1,0 +1,3 @@
+the cascade-config file in the /chrome folder ( current folder) is the default one, 
+
+the cascade-config file in the /includes folder is the one that actually takes effect in firefox (shows more buttons)
