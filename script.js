@@ -1,6 +1,10 @@
 $(document).ready(function() {
     var storedContent = localStorage.getItem('selectedContent');
     var storedColor = localStorage.getItem('selectedColor');
+
+    //default values
+    storedColor = storedContent || '1';
+    storedColor = storedColor || '9e9e9e';
   
     if (storedContent && storedColor) {
       // Remove 'active' class from all buttons
@@ -56,6 +60,6 @@ $(document).ready(function() {
       case 4:
         return '#8ad1cf'; // Example color for target 4
       default:
-        return 'white'; // Default color
+        return '9e9e9e'; // Default color
     }
   }
