@@ -1,8 +1,8 @@
 :root {
     --color-bg: #22252a;
-    --color-fg: #8ad1cf;
-    --color-link: #ffffff;
-    --color-link-visited: #ffffff;
+    --color-fg: #9e9e9e;
+    --color-link: #c5c5c5;
+    --color-link-visited: #c5c5c5;
     --color-link-hover: #8ad1cf ;
 }
 
@@ -210,6 +210,7 @@ div[class*="content-"]:not(.active) {
   padding-top: 1.5%;
   box-sizing: border-box;
   align-self: flex-start;
+  font-size: small;
 }
 
 .links {
