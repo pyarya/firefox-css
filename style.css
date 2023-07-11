@@ -1,5 +1,5 @@
 :root {
-    --color-bg: #22252a;
+    --color-bg: #1e2021;
     --color-fg: #9e9e9e;
     --color-link: #c5c5c5;
     --color-link-visited: #c5c5c5;
@@ -50,9 +50,9 @@ body {
   grid-area: right;
   height: 35%;
   width: 100%;
-  background-color: #282a30;
+  background-color: #222425;
   padding: 4%;
-  filter: drop-shadow(5px 5px 01px #1f1e25);
+  filter: drop-shadow(7px 7px 01px #19191a);
   position: relative;
   overflow: auto;
   display: flex;
@@ -219,7 +219,7 @@ div[class*="content-"]:not(.active) {
   width: 80%;
   outline: none;
   border: none;
-  background-color: #282a30;
+  background-color: #222425;
   color: #c9c9c9;
   font-size: 1.1vw;
   padding-top: 1.5%;
